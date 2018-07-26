@@ -7,8 +7,8 @@ import store from './ducks/store'
 import App from './App';
 import './index.css';
 
-
-// you only need to wrap Provider over the App root component and this makes it available to every other component in the entire application;
+// you only need one Provider;
+// you only need to wrap Provider over the App root component and pass store as a variable;this makes the store available to every other component in the entire application;
 
 ReactDOM.render (
     <Provider store={store}>
