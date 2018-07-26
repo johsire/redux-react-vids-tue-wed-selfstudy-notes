@@ -39,3 +39,12 @@ export default function reducer(state, action) {
       return state;
   }
 }
+
+
+// action creator is responsible for creating a properly formatted action; its not the action itself;
+export function addChor(newChore) {
+  return {
+    type: ADD_CHORE,
+    payload: newChore
+  }
+}

@@ -41,7 +41,6 @@ class AddtoList extends Component {
     )
   };
 
-  
 
 render() {
   return (
