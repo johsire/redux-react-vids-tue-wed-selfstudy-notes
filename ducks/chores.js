@@ -26,7 +26,7 @@ export default function reducer(state, action) {
       // if we want to remove a chore we can add in a new case before the default case; & add string Const at the top;
     case REMOVE_CHORE:
       let targetChore = action.payload;
-      var newState = {};
+      // var newState = {};
       var newChores = [...state.chores];
 
       newChores.splice(newChores.indexOf(targetChore), 1);
