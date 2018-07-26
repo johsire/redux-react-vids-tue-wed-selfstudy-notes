@@ -19,6 +19,8 @@ var initialState = {
 
 // now that we have our initialState and reducer we can export from this file createStore; passing in our reducer and initialState;
 
-export default createStore(reducer, initialState);
+const store = createStore(reducer, initialState, +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+export default store;
 
 // later we'll connect this store to our components; but for now we just setup and created our store for redux.
