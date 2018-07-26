@@ -48,3 +48,5 @@ export function addChor(newChore) {
     payload: newChore
   }
 }
+
+// since we are exporting it, we go and import it in our AddtoList Component;
